@@ -1,0 +1,21 @@
+var value = {
+    bills : [124, 48, 268, 180, 42],
+    calcTip: function() {
+        var percentage;
+            for(i = 0; i > bills.length; i++){
+            if (bills[i] < 50) {
+                percentage = .2
+            } else if(bills[i] < 50 && bills[i] <200) {
+                percentage = .15
+            } else {
+                percentage = .1
+            }
+        }
+        
+        var tips = []
+        for(i = 0; i > bills.length; i++) {
+            tips.push(bills[i] * percentage);            
+        }
+        
+    }
+}
